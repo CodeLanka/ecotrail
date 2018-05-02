@@ -1,0 +1,66 @@
+
+
+body {
+ 	font-family: 'Berkshire Swash', cursive;
+}
+
+.login-form {
+	display: none;
+}
+
+.logo {
+	max-width: 	500px;
+	width: 80%;
+}
+.uihold {
+	width: 50px;
+	border-radius: 100%;
+	vertical-align: middle;
+	z-index: 10;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+#login-info {
+	text-align: center;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.static-content {
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.clue-images {
+	max-width: 600px;
+	width: 100%;
+}
+
+#content {
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+	margin-top: 5%;
+	word-wrap: break-word;
+
+}
+
+#questionNumber {
+	/*position: absolute;*/
+	/*top: 30%;*/
+	/*left: 1%;*/
+	font-size: 30pt;
+	font-weight: bold;
+}
+
+.footer-text {
+	font-family: 'Roboto', sans-serif;
+	font-size: x-small;
+}

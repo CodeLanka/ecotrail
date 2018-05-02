@@ -1,0 +1,48 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "public",
+
+    "rewrites": [ 
+    	{
+    		"source": "/rules",
+    		"destination": "/rules.html"
+    	},
+      {
+        "source": "/desc1",
+        "destination" : "/desc_1.html"
+      },
+      {
+        "source": "/desc2",
+        "destination" : "/desc_2.html"
+      },
+      {
+        "source": "/desc3",
+        "destination" : "/desc_3.html"
+      },
+      {
+        "source": "/desc4",
+        "destination" : "/desc_4.html"
+      },
+      {
+        "source": "/????????????????????????????????",
+        "destination" : "/index.html"
+      },
+      {
+        "source": "/js/init.js",
+        "destination": "/js/init.js"
+      },
+      {
+        "source": "/favicon.ico",
+        "destination": "/icon.ico"
+      },
+    	{
+    		"source": "**",
+    		"destination": "/404.html"
+    	}
+
+  	]
+  }
+}

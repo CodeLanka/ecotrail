@@ -1,0 +1,73 @@
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+
+{
+	"exp": 121343315,
+	"user": "user@gmail.com",
+	"key": "12312514b14d1d13a",
+	"question": 1
+}
+
+
+
+/*
+Client --> server
+GET https://api.ecotrail.gdgsrilanka.org
+tell user to use HTTP POST to get questions and POST the email and key
+and tell them to answer with the email, key and answer
+
+
+-----
+Client --> server
+POST https://api.ecotrail.gdgsrilanka.org
+{
+	"email": "user@gmail.com",
+	"key"; "12123b13d12312c31f31"
+}
+* server sees that there is no jwt and the request is a POST
+
+Client <-- Server
+-if(email and key matches the question position)
+Authorization: Bearer {JWT}
+{
+	"question": "What is the tallest mountain in asia"
+}
+
+-else
+
+{
+	"result": "failed",
+	"message": "Wrong key"
+}
+
+
+
+----
+Client --> Server
+Authorization: Bearer {JWT}
+{
+	"answer": "Mount Everest"	
+}
+
+Client <-- Server
+-if(answer is correct AND jwt is valid AND jwt has not timed out)
+Authorization: Bearer {JWT2}
+{
+	"result": "ok",
+	"question": "How much is two plus three"
+}
+
+-else if(answer is correct AND JWT is timed out)
+{
+	"result": "timeout",
+	"message": "Your time was up. Answer within 30s"
+}
+
+-else
+{
+	"result": "failed"
+	"message": "wrong answer or authorization failed"
+}

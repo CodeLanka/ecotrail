@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoTrail API</title>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <style type="text/css">
+        body {
+ 	        font-family: 'Berkshire Swash', cursive;
+        }
+    </style>
+</head>
+<body>
+    <center><h3>EcoTrail - Lets answer some simple questions</h3> <br/></center>
+    <h3>Usage</h3>
+    <ul>
+        <li>Do a HTTP POST to this address with this JSON payload <br/>
+            <span style="font-family: monospace;">{"email": "your@email.add", "key": "if you got one, write here. If this is your first question, leave blank"}</span></li>
+        <li>
+            You will get a question like this <br/>
+            <span style="font-family: monospace;">{"result": "ok", "question" : "will you marry me?"}</span>
+
+        </li>
+        <li>Find the answer. Send in the answer with the JWT in the Authorization header as a bearer in this style <br/>
+            <span style="font-family: monospace">{"answer":"I cannot. I am already married", "email": "your@email.add", "key": "if you got one, write here. If this is your first question, leave blank"}</span>
+        </li>
+        <li>Analyze the result and repeat answering the questions in the same manner till you get the key to the next step.</li>
+    </ul>
+
+
+</body>
+</html>

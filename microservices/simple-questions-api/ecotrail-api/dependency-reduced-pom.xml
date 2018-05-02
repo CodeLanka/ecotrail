@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>msf4j-service</artifactId>
+    <groupId>org.wso2.msf4j</groupId>
+    <version>2.5.2</version>
+    <relativePath>../pom.xml/pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.gdgsrilanka.ecotrail.api</groupId>
+  <artifactId>ecotrail-api</artifactId>
+  <name>WSO2 MSF4J Microservice</name>
+  <version>DAWN</version>
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>intro.html</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <targetPath>..</targetPath>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>intro.html</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+  <properties>
+    <microservice.mainClass>org.gdgsrilanka.ecotrail.api.Application</microservice.mainClass>
+  </properties>
+</project>
+

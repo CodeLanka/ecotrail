@@ -1,0 +1,13 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: index.php
+- url: /android/
+  script: android.php 
+- url: /ekverify/
+  script: simpleapi.php
+- url: /verify/
+  script: keysvalidator.php
+  

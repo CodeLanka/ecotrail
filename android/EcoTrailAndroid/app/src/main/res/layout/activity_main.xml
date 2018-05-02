@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.gdgsrilanka.ecotrail.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_label_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_label_username"
+            android:paddingTop="10dip"
+            android:hint="Enter the email that you walk the trail.."
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/container_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_email">
+
+        <TextView
+            android:id="@+id/text_label_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/input_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_label_key"
+            android:paddingTop="10dip"
+            android:text="2628fc345fc720151a8dfbc61854710c"
+            android:hint="Enter the key that pointed you here.."
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_fetch_clue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guide Me!"
+        android:layout_below="@id/container_key"/>
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_fetch_clue"></RelativeLayout>
+
+</RelativeLayout>

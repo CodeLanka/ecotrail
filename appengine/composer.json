@@ -1,0 +1,17 @@
+{
+    "name": "gdgsrilanka/io18",
+    "type": "io18-quiz",
+    "require": {
+        "endroid/qr-code": "^2.5",
+        "povils/figlet": "dev-master",
+        "picqer/php-barcode-generator": "^0.2.2",
+        "firebase/php-jwt": "^5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tharaka Devinda",
+            "email": "tdevinda@gmail.com"
+        }
+    ]
+}

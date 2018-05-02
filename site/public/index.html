@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>You are in the Eco Trail</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <script defer src="/__/firebase/4.9.0/firebase-app.js"></script>
+    
+    <script defer src="/__/firebase/4.9.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.9.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.9.0/firebase-storage.js"></script>
+    <script defer type="text/javascript" src="js/init.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 col-sm-12">
+        <center><img class="logo" width="80%" src="img/EcoTrail.png" /></center>
+      </div>
+      <div class="col-md-3">
+        <div id="login-info"></div>
+      </div>
+    </div>
+  	    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="loading-form">
+          <center><p>EcoTrail is opening up...</p></center>
+        </div>
+      </div>
+    </div>
+    <div class="login-form">
+      
+      <center>
+        Welcome to the EcoTrail. If you need to tred this path, you need to obey the <a href="/rules">rules</a> and Login so that we know who you say you are. Remember, the jungle is a hard place to tred into. Keep to the path, and don't feed the animals. If you see a butterfly, do not panic. It will fly away if you don't hurt it.
+        <br/><br/>
+        <input type="checkbox" name="agree" id="agree">I agree to all <a href="/rules">rules and code of conduct</a><br/><br/>
+        <input style="font-family: 'Berkshire Swash', cursive; font-size: 20pt" type="button" name="login" id="login" value="Login"/>
+      </center>
+    </div>
+    <div class="row static-content">
+      <div id="desc-image" class="col-md-3">
+        <div id="questionNumber"></div>
+      </div>
+      <div id="desc-content" class="col-md-9 col-sm-11">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-9 col-sm-12"><div id="content"></div></div>
+      <div class="col-md-2">
+        <div class="footer">Read and understand the <a href="/rules">Rules, Regulations, and Hints</a></div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 footer-text"><center>Powered by <img id="gdg-logo" /></center></div>
+    </div>
+    
+    <script defer type="text/javascript" src="js/ecotrail.js"></script>
+    
+
+    
+  </body>
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75655731-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75655731-8');
+</script>
+</html>
+
+
