@@ -30,7 +30,7 @@ firebase serve
 
 
 ### Solving
-Find the EcoTrail walkthrough writted by @tdevinda 
+[Find the EcoTrail walkthrough](https://medium.com/@tdevinda/ecotrail-game-walk-through-f9a72c347913) written by @tdevinda 
 
 
 Please feel free to copy, change, and use anywhere. If you feel like it, leave us some credits. We'd love the feeling that someone made use of this code
